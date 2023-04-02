@@ -1,3 +1,13 @@
+[test_hosts]
 10.10.95.180
 10.10.95.181
+#10.10.95.180	ansible_port=22	ansible_connection=ssh        ansible_user=ubuntu
+#10.10.95.181	ansible_port=22	ansible_connection=ssh        ansible_user=ubuntu
+
+
+[test_hosts:vars]
+ansible_become=true
+ansible_port=22
+ansible_connection=ssh
+ansible_user=ubuntu
 
